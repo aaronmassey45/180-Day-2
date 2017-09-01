@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>The Aaron Massey Project | 180 Websites</title>
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/main.css">
   <link href="css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.js"></script>
 </head>
@@ -19,8 +19,8 @@
       <div class="container">
         <div class="navbar-header">
           <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                Menu <i class="fa fa-bars" aria-hidden="true"></i>
-              </button>
+             Menu <i class="fa fa-bars" aria-hidden="true"></i>
+           </button>
           <a class="navbar-brand" href="http://aaronmassey.pro/">The Aaron Massey Project</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
@@ -36,53 +36,33 @@
     <!-- END OF NAVBAR -->
 
     <!-- START OF ABOUT -->
-    <div id="about" class="container">
+    <section id="about" class="container">
       <div class="row">
-        <div class="col-sm-8">
-          <p class="text-right about-section">
-            What's going on? I'm Aaron! Looking to transition from Electrical Engineering to become a professional Full Stack Developer. I am looking for oppurtunities in and around San Antonio but am willing to relocate.<br><br>
-            I am current making 180 Websites in 180 Days! I got this challenge from Jennifer Dewalt! I am trying not to use too many of the websites from her original challenge.<br><br>
+        <div class="col-sm-8 about-section">
+          <p class="text-right">
+            What's going on? I'm Aaron! Looking to transition from Electrical Engineering to become a professional Full Stack Developer. I am looking for opportunities in and around San Antonio but am willing to relocate.<br><br>
+            I am currently making 180 Websites in 180 Days! I got this challenge from Jennifer Dewalt! I am trying not to use too many of the websites from her original challenge.<br><br>
             Follow along on here, <a href="https://github.com/aaronmassey45" class="gold"><u>Github</u></a>, and my <a href="https://medium.com/@aaronmassey45" class="gold"><u>blog</u></a>!
           </p>
-          <hr style="border:2px solid white;width:90%; margin:auto" align="right">
-          <p class="text-right about-section">Web Developer - Fitness Enthusiast - Dog Owner/Whisperer</p>
+          <hr style="border:2px solid white; margin:auto" align="right">
+          <p class="text-right mt">Web Developer - Fitness Enthusiast - Dog Whisperer</p>
+          <hr style="border:2px solid white; margin:auto" align="right">
+          <div class="md-font text-center mt">
+            <p><b>Today's website</b></p>
+            <p class="gold"><a href="http://aaronmassey.pro/180Websites/Day-47"><u>The Second Coming</u></a></p>
+          </div>
         </div>
         <div class="col-sm-4">
           <img width="90%" src="images/LowPoly.png" alt="Low Poly me" align="right">
         </div>
       </div>
-    </div>
+    </section>
     <!-- END OF ABOUT -->
   </header>
 
   <main>
-    <!-- START OF 180 -->
-    <div id="180" class="container text-center bg-grey">
-      <h2 class="cinzel">180 Websites in 180 Days</h2>
-      <hr style="border:2px solid black;width:90%; margin:0 auto 10px auto"><br>
-      <div class="row">
-        <div class="col-sm-6 md-font">
-          <p><b>Today's website</b></p>
-          <p class="gold"><a href="#"><u>I am Morty-fied!</u></a></p>
-        </div>
-        <div class="col-sm-6">
-          <br>
-          <a class="btn btn-default btn-lg" href="https://jenniferdewalt.com/" target="_blank">Click here for the OG 180 Days</a>
-        </div>
-      </div>
-      <br><hr style="border:2px solid black;width:90%; margin:0 auto 10px auto">
-      <div class="days text-left col-sm-4 col-sm-offset-5 sm-font">
-        <p>Day 5: <a href="http://aaronmassey.pro/180Websites/Day-5/" class="gold"><u>I am Morty-fied</u></a></p>
-        <p>Day 4: <a href="http://aaronmassey.pro/180Websites/Day-4/" class="gold"><u>Fitness Calculator</u></a></p>
-        <p>Day 3: <a href="http://aaronmassey.pro/180Websites/Day-3/" class="gold"><u>Roll The Dice</u></a></p>
-        <p>Day 2: <a href="#top" class="gold"><u>Homepage</u></a></p>
-        <p>Day 1: <a href="http://aaronmassey.pro/180Websites/Day-1/" class="gold"><u>Is It A Word?</u></a></p>
-      </div>
-    </div>
-    <!-- END OF 180 -->
-
     <!-- START OF PORTFOLIO -->
-    <div id="portfolio" class="container text-center bg-lgrey">
+    <section id="portfolio" class="container text-center bg-lgrey">
       <h2 class="cinzel">Portfolio</h2>
       <hr style="border:2px solid black;width:90%; margin:0 auto 10px auto">
       <div class="row text-justify">
@@ -90,6 +70,8 @@
           <div class="thumbnail">
             <img src="images/TwitchStream.png" alt="">
             <p>Displays Twitch.tv channels using their API. Allows you to see whos currently online, offline, or if the channel exists. You can view this project on:</p>
+            <button class="btn btn-default" onclick='on("p1")'>Click</button>
+            <div class="overlay" id="p1">Project1</div>
             <ul>
               <li><a href="https://github.com/aaronmassey45/TwitchStream" target="_blank"><b>Github</b></a></li>
               <li><a href="https://codepen.io/aaronmassey/full/rmJXPm/" target="_blank"><b>Codepen</b></a></li>
@@ -117,19 +99,91 @@
         <div class="col-sm-6">
           <div class="thumbnail">
             <img src="images/WeatherApp.png" alt="">
-            <p>Weather app using Geolocation and Dark Sky API for weather info. Made with HTML/CSS/jQuery. You can view this project on:</p>
+            <p>Weather app using Geo-location and Dark Sky API for weather info. Made with HTML/CSS/jQuery. You can view this project on:</p>
             <ul>
               <li><a href="https://github.com/aaronmassey45/Weather-App" target="_blank"><b>Github</b></a></li>
-              <li><a href="https://codepen.io/aaronmassey/full/rmJXPm/" target="_blank"><b>Codepen</b></a></li>
+              <li><a href="https://codepen.io/aaronmassey/full/wdeBGr/" target="_blank"><b>Codepen</b></a></li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- END OF PORTFOLIO -->
 
+    <!-- START OF 180 -->
+    <section id="180" class="container text-center bg-grey">
+      <h2 class="cinzel">180 Websites in 180 Days</h2>
+      <hr style="border:2px solid black;width:90%; margin:0 auto 10px auto"><br>
+      <div class="row">
+        <div class="col-sm-6 md-font">
+          <p><b>Today's website</b></p>
+          <p class="gold"><a href="http://aaronmassey.pro/180Websites/Day-47"><u>The Second Coming</u></a></p>
+        </div>
+        <div class="col-sm-6">
+          <br>
+          <a class="btn btn-default btn-lg" href="https://jenniferdewalt.com/" target="_blank">Click here to see Jenn's 180 Websites</a>
+        </div>
+      </div>
+      <br><hr style="border:2px solid black;width:90%; margin:0 auto 10px auto">
+      <div class="days text-left row sm-font">
+        <div class="col-sm-6">
+          <p>Day 47: <a href="http://aaronmassey.pro/180Websites/Day-47" class="gold"><u>The Second Coming</u></a></p>
+        	<p>Day 46: <a href="http://aaronmassey.pro/180Websites/Day-46" class="gold"><u>Wish</u></a></p>
+        </div>
+        <div class="col-sm-6">
+          <p>Day 45: <a href="http://aaronmassey.pro/180Websites/Day-45" class="gold"><u>Gifs Galore</u></a></p>
+          <p>Day 44: <a href="http://aaronmassey.pro/180Websites/Day-44" class="gold"><u>PokeApp</u></a></p>
+          <p>Day 43: <a href="http://aaronmassey.pro/180Websites/Day-43" class="gold"><u>Metronome</u></a></p>
+          <p>Day 42: <a href="http://aaronmassey.pro/180Websites/Day-42" class="gold"><u>NASA Photo of the Day</u></a></p>
+          <p>Day 41: <a href="http://aaronmassey.pro/180Websites/Day-41" class="gold"><u>Animation Effects</u></a></p>
+          <p>Day 40: <a href="http://aaronmassey.pro/180Websites/Day-40" class="gold"><u>React Simon!</u></a></p>
+          <p>Day 39: <a href="http://aaronmassey.pro/180Websites/Day-39" class="gold"><u>React Tic Tac Toe</u></a></p>
+          <p>Day 38: <a href="http://aaronmassey.pro/180Websites/Day-38" class="gold"><u>FreeCodeCamp - Camper Leaderboard</u></a></p>
+          <p>Day 37: <a href="http://aaronmassey.pro/180Websites/Day-37" class="gold"><u>React Pomodoro Timer</u></a></p>
+          <p>Day 36: <a href="http://aaronmassey.pro/180Websites/Day-36" class="gold"><u>React Calculator</u></a></p>
+          <p>Day 35: <a href="http://aaronmassey.pro/180Websites/Day-35" class="gold"><u>Technicolor Boxes</u></a></p>
+          <p>Day 34: <a href="http://aaronmassey.pro/180Websites/Day-34" class="gold"><u>Twitch.tv Streamers</u></a></p>
+          <p>Day 33: <a href="http://aaronmassey.pro/180Websites/Day-33" class="gold"><u>Wikipedia Viewer</u></a></p>
+          <p>Day 32: <a href="http://aaronmassey.pro/180Websites/Day-32" class="gold"><u>Random Quote Generator</u></a></p>
+          <p>Day 31: <a href="https://amp-imageabstraction.glitch.me/" class="gold"><u>Image Search Abstraction Layer</u></a></p>
+          <p>Day 30: <a href="https://amp-url-shortner.glitch.me/" class="gold"><u>URL Shortener</u></a></p>
+          <p>Day 29: <a href="https://amp-filemetadata.glitch.me/" class="gold"><u>File Metadata</u></a></p>
+          <p>Day 28: <a href="https://amp-header-parser.glitch.me/" class="gold"><u>Header Parser</u></a></p>
+          <p>Day 27: <a href="https://amp-timestamp.glitch.me/" class="gold"><u>Timestamp Microservice</u></a></p>
+          <p>Day 26: <a href="http://aaronmassey.pro/180Websites/Day-26" class="gold"><u>Color Game</u></a></p>
+          <p>Day 25: <a href="http://aaronmassey.pro/180Websites/Day-25" class="gold"><u>Magnetic Poetry</u></a></p>
+          <p>Day 24: <a href="http://aaronmassey.pro/180Websites/Day-24" class="gold"><u>Pixel Draw</u></a></p>
+          <p>Day 23: <a href="http://aaronmassey.pro/180Websites/Day-23" class="gold"><u>Click Counter</u></a></p>
+          <p>Day 22: <a href="http://aaronmassey.pro/180Websites/Day-22" class="gold"><u>Music Boxes</u></a></p>
+          <p>Day 21: <a href="http://aaronmassey.pro/180Websites/Day-21" class="gold"><u>The Best Page Ever!</u></a></p>
+          <p>Day 20: <a href="http://aaronmassey.pro/180Websites/Day-20" class="gold"><u>Leave a Note!</u></a></p>
+          <p>Day 19: <a href="http://aaronmassey.pro/180Websites/Day-19" class="gold"><u>Weather Forecast</u></a></p>
+          <p>Day 18: <a href="http://aaronmassey.pro/180Websites/Day-18" class="gold"><u>Book Shelf</u></a></p>
+          <p>Day 17: <a href="http://aaronmassey.pro/180Websites/Day-17" class="gold"><u>YouTube Video Viewer</u></a></p>
+          <p>Day 16: <a href="http://aaronmassey.pro/180Websites/Day-16" class="gold"><u>Trivia!</u></a></p>
+          <p>Day 15: <a href="http://aaronmassey.pro/180Websites/Day-15/" class="gold"><u>Github Profile Viewer</u></a></p>
+          <p>Day 14: <a href="http://aaronmassey.pro/180Websites/Day-14/" class="gold"><u>#Hustle</u></a></p>
+          <p>Day 13: <a href="http://aaronmassey.pro/180Websites/Day-13/" class="gold"><u>TMDb Movie Search</u></a></p>
+          <p>Day 12: <a href="http://aaronmassey.pro/180Websites/Day-12/" class="gold"><u>Take A Quiz!</u></a></p>
+          <p>Day 11: <a href="http://aaronmassey.pro/180Websites/Day-11/" class="gold"><u>The Force is with you</u></a></p>
+          <p>Day 10: <a href="http://aaronmassey.pro/180Websites/Day-10/" class="gold"><u>Auto Happiness :)</u></a></p>
+          <p>Day 09: <a href="http://aaronmassey.pro/180Websites/Day-09/" class="gold"><u>Recipe Box</u></a> <a
+          href="http://aaronmassey.pro/RecipeBox/" class="gold"><u>(V2)</u></a></p>
+          <p>Day 08: <a href="http://aaronmassey.pro/180Websites/Day-08/" class="gold"><u>Markdown Previewer</u></a></p>
+          <p>Day 07: <a href="http://aaronmassey.pro/180Websites/Day-07/" class="gold"><u>Teleprompter!</u></a></p>
+          <p>Day 06: <a href="http://aaronmassey.pro/180Websites/Day-06/" class="gold"><u>Stopwatch</u></a></p>
+          <p>Day 05: <a href="http://aaronmassey.pro/180Websites/Day-05/" class="gold"><u>I am Morty-fied</u></a></p>
+          <p>Day 04: <a href="http://aaronmassey.pro/180Websites/Day-04/" class="gold"><u>Fitness Calculator</u></a></p>
+          <p>Day 03: <a href="http://aaronmassey.pro/180Websites/Day-03/" class="gold"><u>Roll The Dice</u></a></p>
+          <p>Day 02: <a href="#top" class="gold"><u>Homepage</u></a></p>
+          <p>Day 01: <a href="http://aaronmassey.pro/180Websites/Day-01/" class="gold"><u>Is It A Word?</u></a></p>
+        </div>
+      </div>
+    </section>
+    <!-- END OF 180 -->
+
     <!-- START OF SOCIAL -->
-    <div id="contact" class="container-fluid bg-grey text-center">
+    <section id="contact" class="container-fluid bg-grey text-center">
       <h2 class="cinzel">Find Me On Social Media</h2>
       <hr style="border:2px solid black;width:70%; margin:auto">
       <div class="row col-xs-12">
@@ -140,7 +194,7 @@
         <a class="logo" href="https://medium.com/@aaronmassey45" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
         <a class="logo" href="mailto:aaron@aaronmassey.pro" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
       </div>
-    </div>
+    </section>
     <!-- END OF SOCIAL -->
   </main>
 
@@ -154,6 +208,14 @@
 </html>
 
 <script>
+  function on(id) {
+    document.getElementById(id).style.display = "block";
+  }
+
+  function off(id) {
+    document.getElementById(id).style.display = "none";
+  }
+  
   $(document).ready(function() {
     collapseNavbar();
     //to collapse the navbar
