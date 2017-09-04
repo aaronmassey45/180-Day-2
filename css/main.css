@@ -134,18 +134,13 @@ main {
     background-color: transparent;
     border-bottom: 0.5px solid white;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 14px;
     color: white;
     font-weight: 700;
     padding: 0;
     transition-duration: 0.5s;
   }
-  .navbar a, .navbar a:link, .navbar a:active {
-    color: white;
-  }
-  .navbar a:hover {
-    color: black;
-  }
+
   header .collapse-navbar {
     padding: 10px;
     background-color: #D2B887;
@@ -153,7 +148,23 @@ main {
     color: black;
     border: none;
   }
+
   header .collapse-navbar a, header .collapse-navbar a:link {
     color: black;
+  }
+
+  .navbar a, .navbar a:link, .navbar a:active {
+    color: white;
+  }
+
+  .navbar a:hover {
+    color: black;
+  }
+}
+
+@media screen and (max-width:400px) {
+  header .navbar-brand {
+    font-size: 14px;
+    margin: 8px 0;
   }
 }
