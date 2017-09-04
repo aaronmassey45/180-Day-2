@@ -3,18 +3,6 @@
   margin: 0;
 }
 
-#about {
-  margin-top: 70px;
-}
-
-.about-section {
-  padding: 25px;
-  font-size: 20px;
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-family: 'Oswald', sans-serif;
-}
-
 .bg-grey {
   background-color: grey;
   padding: 15px;
@@ -54,6 +42,23 @@ header {
   background-size: cover;
 }
 
+#header {
+  margin-top: 70px;
+}
+
+#header img {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.header-section {
+  font-size: 20px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: 'Oswald', sans-serif;
+}
+
 html body main {
   background-color: black;
 }
@@ -75,10 +80,6 @@ main {
 
 .md-font {
   font-size: 25px;
-}
-
-.mt {
-  padding: 15px 0;
 }
 
 .navbar-fixed-top {
@@ -104,6 +105,14 @@ main {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 2;
   cursor: pointer;
+}
+
+.pad-sm {
+  padding: 20px 0;
+}
+
+.pad-lg {
+  padding: 35px 0;
 }
 
 .sm-font {

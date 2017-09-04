@@ -35,32 +35,35 @@
     </nav>
     <!-- END OF NAVBAR -->
 
+    <!-- START OF HEADER -->
+    <section id="header" class="container">
+      <img src="images/LowPoly.png" alt="Low Poly me">
+        <div class="header-section text-center">
+          <b><h1 class="pad-sm">The Aaron Massey Project</h1></b>
+          <hr style="border:2px solid white; margin:auto">
+          <p class="pad-lg">Web Developer - Fitness Junkie - Dog Whisperer</p>
+          <hr style="border:2px solid white; margin:auto">
+          <div class="md-font pad-sm">
+            <p><b>Today's website</b></p>
+            <p class="gold"><a href="http://aaronmassey.pro/180Websites/Day-47"><u>The Second Coming</u></a></p>
+          </div>
+        </div>
+    </section>
+    <!-- END OF HEADER -->
+  </header>
+
+  <main>
     <!-- START OF ABOUT -->
     <section id="about" class="container">
-      <div class="row">
-        <div class="col-sm-8 about-section">
+        <div class="about-section">
           <p class="text-right">
             What's going on? I'm Aaron! Looking to transition from Electrical Engineering to become a professional Full Stack Developer. I am looking for opportunities in and around San Antonio but am willing to relocate.<br><br>
             I am currently making 180 Websites in 180 Days! I got this challenge from Jennifer Dewalt! I am trying not to use too many of the websites from her original challenge.<br><br>
             Follow along on here, <a href="https://github.com/aaronmassey45" class="gold"><u>Github</u></a>, and my <a href="https://medium.com/@aaronmassey45" class="gold"><u>blog</u></a>!
           </p>
-          <hr style="border:2px solid white; margin:auto" align="right">
-          <p class="text-right mt">Web Developer - Fitness Enthusiast - Dog Whisperer</p>
-          <hr style="border:2px solid white; margin:auto" align="right">
-          <div class="md-font text-center mt">
-            <p><b>Today's website</b></p>
-            <p class="gold"><a href="http://aaronmassey.pro/180Websites/Day-47"><u>The Second Coming</u></a></p>
-          </div>
         </div>
-        <div class="col-sm-4">
-          <img width="90%" src="images/LowPoly.png" alt="Low Poly me" align="right">
-        </div>
-      </div>
     </section>
     <!-- END OF ABOUT -->
-  </header>
-
-  <main>
     <!-- START OF PORTFOLIO -->
     <section id="portfolio" class="container text-center bg-lgrey">
       <h2 class="cinzel">Portfolio</h2>
@@ -215,7 +218,7 @@
   function off(id) {
     document.getElementById(id).style.display = "none";
   }
-  
+
   $(document).ready(function() {
     collapseNavbar();
     //to collapse the navbar
